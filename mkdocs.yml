@@ -1,0 +1,52 @@
+site_name: My Docs
+site_url: https://example.com/
+repo_url: https://github.com/example/repository/
+site_description: my site
+copyright: <p><a href="docs/document.pdf">download</a></p><p><a href="https://www.cnchargepoint.com">NANJING POWERCORE TECH CO.,LTD.</a></p>
+nav: 
+  - MkDocs: index.md
+  - User Guide:
+    - Writing Your Docs: user-guide/writing-your-docs.md
+    - Styling Your Docs: user-guide/styling-your-docs.md
+    - Configuration: user-guide/configuration.md
+    - Deploying Your Docs: user-guide/deploying-your-docs.md
+    - Custom Themes: user-guide/custom-themes.md
+    - Plugins: user-guide/plugins.md
+  - About:
+    - Release Notes: about/release-notes.md
+    - Contributing: about/contributing.md
+    - License: about/license.md
+theme: 
+  name: "readthedocs"
+  formats: 
+    - epub
+    - pdf
+  favicon: img/favicon.ico
+  logo: img/Snipaste_2021-12-08_13-38-06.png
+  features:
+    - header.autohide
+    - search.highlight
+    - search.share
+  palette:  # 颜色
+    primary: 'light blue'
+    accent: 'indigo'
+  font:
+    code: Roboto Mono
+plugins:
+  - search:
+      lang: zh
+  - with-pdf:
+      author: Chaoji Zhang
+      cover: true
+      cover_title: 超级测试文档
+      cover_subtitle: v1.0
+      copyright: NANJING POWERCORE TECH CO.,LTD.
+      output_path: "D:\\code\\文档\\个人编辑\\my-project\\document.pdf"
+      cover_logo: "D:\\code\\文档\\个人编辑\\my-project\\docs\\img\\image_1635843430_006.jpg"
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+      link: docs/document.pdf
+extra_css:
+  - css/extra.css
